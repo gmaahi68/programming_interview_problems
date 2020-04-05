@@ -1,4 +1,4 @@
-function kardane(arr){
+function kadane(arr){
     let aux = [arr[0]], maxSum = Number.MIN_SAFE_INTEGER, endingIndex = -1, subarr = [];
     for(let i = 1; i<arr.length;i++){
         aux[i] = Math.max(arr[i], aux[i-1] + arr[i]);
@@ -19,5 +19,5 @@ function kardane(arr){
     return maxSum;
 }
 
-console.log(kardane([8,9,4,5,7,2,6,3,1]))
-console.log(kardane([8,-9,4,-5,7,2,6,-3,1]))
+console.log(kadane([8,9,4,5,7,2,6,3,1]))
+console.log(kadane([8,-9,4,-5,7,2,6,-3,1]))
