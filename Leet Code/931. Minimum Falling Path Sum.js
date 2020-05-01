@@ -25,4 +25,4 @@ var minFallingPathSum = function(A) {
         }
     }
     return min;
-    }
+    }   
